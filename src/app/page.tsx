@@ -162,19 +162,19 @@ export default function Home() {
               },
               {
                 name: "Growth",
-                price: "$79",
+                price: "₹6,499/mo",
                 desc: "100 inspections / month",
                 points: ["AI summaries", "AI auto‑remarks", "Branded PDFs"],
               },
               {
                 name: "Professional",
-                price: "$199",
+                price: "₹16,499/mo",
                 desc: "500 inspections / month",
                 points: ["Advanced analytics", "Buyer portal", "All AI"],
               },
               {
                 name: "Enterprise",
-                price: "$499",
+                price: "₹41,499/mo",
                 desc: "Unlimited inspections",
                 points: ["Multi‑factory", "Custom workflows", "SLA"],
               },
@@ -199,15 +199,22 @@ export default function Home() {
             <p className="mt-2 text-zinc-600">
               See only what matters. Decide in 10 seconds.
             </p>
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <form
+              className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row"
+              action="mailto:abdulansari@easternmills.com"
+              method="post"
+            >
               <input
+                name="email"
+                type="email"
+                required
                 className="w-full max-w-xs rounded-full border border-zinc-200 px-4 py-2 text-sm"
                 placeholder="you@company.com"
               />
               <button className="rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white">
                 Start free
               </button>
-            </div>
+            </form>
           </div>
         </section>
       </main>
