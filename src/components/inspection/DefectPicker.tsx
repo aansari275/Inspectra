@@ -35,21 +35,21 @@ const DEFECT_CODE_DATA: Record<DefectCode, {
   category: DefectCategory;
   defaultSeverity: DefectSeverity;
 }> = {
+  "WRP-6IN": { name: "Warp Count (per 6 inches)", category: "construction", defaultSeverity: "major" },
+  "WFT-6IN": { name: "Weft Count (per 6 inches)", category: "construction", defaultSeverity: "major" },
+  "PIL-HGT": { name: "Pile Height Variation", category: "construction", defaultSeverity: "major" },
+  "GSM-VAR": { name: "GSM Out of Tolerance", category: "construction", defaultSeverity: "major" },
   "CLR-VAR": { name: "Color Variation", category: "visual", defaultSeverity: "major" },
-  "WEV-DEF": { name: "Weaving Defect", category: "construction", defaultSeverity: "major" },
-  "PAT-MIS": { name: "Pattern Mismatch", category: "design", defaultSeverity: "major" },
+  "CRN-STR": { name: "Corners Not Straight/Square", category: "dimension", defaultSeverity: "major" },
+  "BND-4IN": { name: "Binding (per 4 inches)", category: "finishing", defaultSeverity: "minor" },
+  "PLY-CNT": { name: "Ply Count in Weaving", category: "construction", defaultSeverity: "major" },
+  "CAD-MIS": { name: "Not as per Approved CAD", category: "design", defaultSeverity: "critical" },
   "DIM-LEN": { name: "Length Out of Tolerance", category: "dimension", defaultSeverity: "major" },
   "DIM-WID": { name: "Width Out of Tolerance", category: "dimension", defaultSeverity: "major" },
-  "FIN-EDG": { name: "Edge/Binding Defect", category: "finishing", defaultSeverity: "minor" },
-  "FIN-FRG": { name: "Fringe Defect", category: "finishing", defaultSeverity: "minor" },
-  "STN-OIL": { name: "Oil/Grease Stain", category: "contamination", defaultSeverity: "major" },
-  "STN-WAT": { name: "Water Stain", category: "contamination", defaultSeverity: "minor" },
-  "STN-INK": { name: "Ink/Dye Stain", category: "contamination", defaultSeverity: "major" },
-  "TXT-PIL": { name: "Pilling", category: "visual", defaultSeverity: "minor" },
-  "TXT-SNK": { name: "Snag/Pull", category: "visual", defaultSeverity: "minor" },
-  "CON-LOO": { name: "Loose Threads", category: "construction", defaultSeverity: "minor" },
-  "CON-MIS": { name: "Missing Knots", category: "construction", defaultSeverity: "major" },
-  "LAB-MIS": { name: "Label Missing/Wrong", category: "other", defaultSeverity: "minor" },
+  "FRG-DEF": { name: "Fringe Defect/Uneven", category: "finishing", defaultSeverity: "minor" },
+  "STN-OIL": { name: "Oil/Grease Stain", category: "contamination", defaultSeverity: "critical" },
+  "KNT-DNS": { name: "Knot Density Variation", category: "construction", defaultSeverity: "major" },
+  "BCK-FIN": { name: "Backing Finish Issue", category: "finishing", defaultSeverity: "minor" },
 };
 
 const DEFECT_CODES_LIST = Object.keys(DEFECT_CODE_DATA) as DefectCode[];
