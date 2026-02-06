@@ -12,8 +12,8 @@ QC inspection SaaS targeting Indian textile mills, rug/carpet manufacturers, and
 - **Deployment:** Netlify
 
 ## Firebase Project
-- **Project ID:** inspectra-app (legacy name)
-- **Console:** https://console.firebase.google.com/project/inspectra-app
+- **Project ID:** rugqc
+- **Console:** https://console.firebase.google.com/project/rugqc
 
 ## GitHub Repo
 - **URL:** https://github.com/aansari275/RugQC.git
@@ -115,5 +115,5 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 
 Required composite indexes are defined in `firestore.indexes.json`. Deploy with:
 ```bash
-firebase deploy --only firestore:indexes --project inspectra-app
+firebase deploy --only firestore:indexes --project rugqc
 ```
